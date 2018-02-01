@@ -17,6 +17,7 @@ if($status==false){
 }else{
   //Selectデータの数だけ自動でループしてくれる
   while( $result = $stmt->fetch(PDO::FETCH_ASSOC)){
+    $view .='<tr>';
 
     $view .='<td>';
     $view .='<a href="detail.php?id='.$result["id"].'">';
